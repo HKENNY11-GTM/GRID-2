@@ -1,0 +1,230 @@
+*{
+box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     margin: 0;
+     background-color:  hsla(0, 12%, 97%, 0.979);
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-family: 'DM Sans';
+    gap:20px;
+}
+.sample{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     gap: 10px;
+    padding: 10px;
+    width: 90%;
+    margin:0;
+    border-radius: 10px;
+    font-family: 'DM Sans';
+}
+/*the beginning of the first container media*/
+.media{
+    border: 1px solid  hsl(256, 67%, 59%);
+    background-color:  hsl(256, 67%, 59%);
+    color: white;
+}
+.media>.star img{
+    width: 60%;
+}
+.media>.social p{
+    font-size: 1.9rem;
+    text-align: center;
+    width: 180px;
+    margin:0;
+}
+.media>p{
+margin:0;
+}
+.green{
+    color: hsl(39, 100%, 71%);
+    margin-right: 10px;
+}
+.star{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+/* the end of the first class */
+
+.manage{
+    border: 1px solid white;
+    background-color: white;
+}
+.manage> .followers img{
+    width: 95%;
+}
+.manage>.paragraphs p{
+margin: 0;
+font-weight: bold;
+font-family:'DM Sans';
+font-size: 1.1rem;
+}
+/* the end of the second class */
+.schedule{
+    border:1px solid hsl(39, 100%, 71%);
+    background-color: hsl(39, 100%, 71%);
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.schedule>img{
+    width:70%;
+}
+.schedule>.paragraphs p{
+    margin: 0;
+    font-weight: bold;
+}
+/* the end of the third class */
+.optimize{
+    border: 1px solid hsl(254, 88%, 90%);
+    background-color: hsl(254, 88%, 90%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.optimize>.time img{
+    width:80%;
+}
+.optimize>.shortand p{
+margin:0;
+font-weight: bold;
+}
+.optimize>.big p{
+    text-align: center;
+    margin:0;
+}
+/* the end of the fourth class */
+.content{
+    border: 1px solid hsl(256, 67%, 59%);
+    background-color: hsl(256, 67%, 59%);
+    /* display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+.content>.non img{
+    width:70%;
+}
+.content>.big p{
+    width:60%;
+    text-align: center;
+    color:white;
+    margin:0;
+}
+/* the end of the fifth class  */
+.audience{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.audience>.short p{
+    font-size: larger;
+    margin:0;
+}
+.audience>img{
+    width:70%;
+}
+.faster{
+    font-size: 0.9rem;
+}
+.joy{
+    font-size: 1.9rem;
+    font-weight: bold;
+}
+/* the end of the sixth class */
+.quicker{
+    border: 1px solid  hsl(31, 66%, 93%);
+    background-color:  hsl(31, 66%, 93%);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.quik{
+    width:90%;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.quik>p{
+    margin:0;
+}
+.quicker>img{
+    width: 70%;
+}
+.jinfa{
+    color:hsl(256, 67%, 59%);
+}
+.artifical{
+    border:1px solid hsl(39, 100%, 71%);
+    background-color: hsl(39, 100%, 71%);
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.artifical>img{
+    width:80%;
+}
+.artifical>.write p{
+    font-size: 1.5rem;
+    margin:0;
+    font-weight: bold;
+    line-height: 0.9;
+}
+/* /* the end of the seventh class  */
+@media screen and (min-width: 768px) {
+body{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width:100%;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: "quicker media media optimize"
+                          "quicker manage schedule optimize";
+}
+.media{
+    grid-area: media;
+}
+.manage{
+    grid-area:manage ;
+}
+.schedule{
+    grid-area: schedule;
+}
+.optimize{
+    grid-area:optimize;
+}
+.content{
+    grid-area:content;
+}
+.audience{
+ grid-area: audience;
+}
+.quicker{
+    grid-area:quicker ;
+}
+.artifical{
+    grid-area: artifical;
+}
+}
