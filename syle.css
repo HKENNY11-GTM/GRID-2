@@ -200,8 +200,9 @@ body{
     display:grid;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(3,1fr);
-    grid-template-areas: "quicker media media optimize"
-                          "quicker manage schedule optimize";
+    grid-template-areas:    "quicker media media optimize"
+                            "quicker manage schedule optimize"
+                            "artifical audience content content"
 }
 .media{
     grid-area: media;
@@ -216,7 +217,7 @@ body{
     grid-area:optimize;
 }
 .content{
-    grid-area:content;
+    grid-area: content;
 }
 .audience{
  grid-area: audience;
