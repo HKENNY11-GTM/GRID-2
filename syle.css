@@ -195,37 +195,43 @@ body{
     justify-content: center;
     align-items: center;
 }
+.content>.big p {
+width:100%;
+}
+.sample{
+    width: 100%;
+}
 .container{
-    width:100%;
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-template-areas:    "quicker media media optimize"
-                            "quicker manage schedule optimize"
-                            "artifical audience content content"
+    grid-template-rows: repeat(4,auto);
+    align-items: flex-start;
+    margin: 10%;
 }
 .media{
-    grid-area: media;
+    grid-area: 1/2/2/4;
 }
 .manage{
-    grid-area:manage ;
+    grid-area: 2/2/4/3;
 }
 .schedule{
-    grid-area: schedule;
+    grid-area: 2/3/4/4;
 }
 .optimize{
-    grid-area:optimize;
+    grid-area:1/4/4/5;
 }
 .content{
-    grid-area: content;
+    grid-area:4/3/5/5;
+    display: flex;
+    flex-direction: row;
 }
 .audience{
- grid-area: audience;
+    grid-area:4/2/5/3;
 }
 .quicker{
-    grid-area:quicker ;
+    grid-area:1/1/2/2;
 }
 .artifical{
-    grid-area: artifical;
+    grid-area:3/1/5/2;
 }
 }
