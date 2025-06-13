@@ -253,4 +253,7 @@ width:100%;
     font-weight: bold;
     font-size: 1.4rem;
 }
+.content>.non img {
+    width: 80%;
+}
 }
